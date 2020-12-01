@@ -10,17 +10,88 @@ body {
     /*common*/
     .text-center{
         text-align: center;
+    }/*wave css**/
+
+    #body-header{
+
+        position:relative;
+        width:100%;
+        height:65vh;
+        background:#3586ff;
+        overflow:hidden;
+     background-attachment: fixed;
+    
+    
+    }
+    #body-header .wave{
+    
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        height:100px;
+        background:url(wave.png);
+        background-size: 1000px 100px;
+        
+    
     }
     
- #body-header{
-        height:65vh;
-        opacity: 0.8;
-        background-image: url("macbook_mouse.jpg");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        padding-top:1.2rem;
+    
+    #body-header .wave.wave1{
+    
+        animation: animate 30s linear infinite;
+        z-index:1000;
+        opacity:1;
+        animation-delay: 0;
+        bottom: 0;
     }
+    #body-header .wave.wave2{
+    
+        animation: animate2 15s linear infinite;
+        z-index:999;
+        opacity:0.5;
+        animation-delay: -5s;
+        bottom: 10px;
+    }
+    #body-header .wave.wave3{
+    
+        animation: animate 30s linear infinite;
+        z-index:998;
+        opacity:0.2;
+        animation-delay: -2s;
+        bottom: 15px;
+    }
+    #body-header .wave.wave4{
+    
+        animation: animate2 5s linear infinite;
+        z-index:997;
+        opacity:0.7;
+        animation-delay: -5s;
+        bottom: 20px;
+    }
+    @keyframes animate{
+    
+        0%{
+            background-position-x:0;
+        }
+       100%{
+            background-position-x:1000px;
+        }
+    
+    
+    }
+    @keyframes animate2{
+    
+        0%{
+            background-position-x:0;
+        }
+       100%{
+            background-position-x:1000px;
+        }
+    
+    
+    }
+    /*********/
 
     /*sections div*/
     section{
@@ -63,6 +134,7 @@ body {
 }
 
 .dropdown-list{
+    
     margin: 0;
     display: none;
     background-color: #828470;
@@ -170,7 +242,7 @@ body {
        width:12rem;
        margin:auto;
        margin-top: -17vh;
-       
+       z-index:1111;
        
    }
    #my-image img{
@@ -178,7 +250,7 @@ body {
        width:100%;/*height and width of parent (about) section*/
        border-radius: 50%;
        border:3px solid white;
-       box-shadow: 1px 1px 10px 2px lightgrey;
+      box-shadow: 1px 1px 10px 2px lightgrey;
        
    }
    #about-para{
@@ -553,9 +625,11 @@ button:focus {
     
     .timeline-box {
         width: 100%;
-        left: 10% !important;
+        left: 3% !important;
     }
-
+.timeline-logo{
+    width:30px;
+}
     .bars {
         display: block;
         margin-right:5px;

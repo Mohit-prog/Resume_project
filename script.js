@@ -21,7 +21,7 @@ function scrollVertical(targetSection){
        clearInterval(interval);
        return;
    }
-   window.scrollBy(0,10);
+   window.scrollBy(0,40);
 
    }
 
