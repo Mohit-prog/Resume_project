@@ -26,49 +26,55 @@ function scrollVertical(targetSection){
    }
 
    ////bar animation
-   var progressBar=document.querySelectorAll('.skill-progress>div');
-   var skillsContainer=document.getElementById('skills-container');
-   window.addEventListener('scroll',checkScroll);
+   var progressBars = document.querySelectorAll(".skill-progress > div");
 
-   var animationDone=false;
-   function initialiseBars(){
-       for(let bar of progressBar){
-           bar.style.width=0+'%';
+
+
+   function initialiseBar(bar) {
+       bar.setAttribute("data-visited", false);
+       bar.style.width = 0 + '%';
+   }
+   
+   for (var bar of progressBars) {
+       initialiseBar(bar);
+   }
+   
+   
+   
+   function fillBar(bar) {
+   
+       var currentWidth = 0;
+       var targetWidth = bar.getAttribute("data-bar-width");
+       var interval = setInterval(function () {
+           if (currentWidth >= targetWidth) {
+               clearInterval(interval);
+               return;
+           }
+           currentWidth++;
+           bar.style.width = currentWidth + '%';
+       }, 5);
+   
+   }
+   
+   
+   
+   // This function uses a for loop for individual progress bars.
+   function checkScroll() {
+   
+       for (let bar of progressBars) {
+           var barCoordinates = bar.getBoundingClientRect();
+           if ((bar.getAttribute("data-visited") == "false") &&
+               (barCoordinates.top <= (window.innerHeight - barCoordinates.height))) {
+               bar.setAttribute("data-visited", true);
+               fillBar(bar);
+           } else if (barCoordinates.top > window.innerHeight) {
+               bar.setAttribute("data-visited", false);
+               initialiseBar(bar);
+           }
+   
        }
-
    }
-   initialiseBars();
-
-   function fillBars(){
-
-for(let bar of progressBar){
-
-    let targetWidth=bar.getAttribute('data-bar-width');
-    let currWidth=0;
-
-    let interval=setInterval(function(){
-        if(currWidth>targetWidth){
-            clearInterval(interval);
-            return;
-        }
-        currWidth++;
-        bar.style.width=currWidth+'%';
-    },5);
-
-}
-   }
-
-   function checkScroll(){
-var coordinates=skillsContainer.getBoundingClientRect();
-if(!animationDone && coordinates.top<window.innerHeight)
-{
- fillBars();
- animationDone=true;
-
-}
-else if(coordinates.top > window.innerHeight){
-    animationDone=false;
-    initialiseBars();
-}
-
-   }
+   
+   
+   
+   window.addEventListener("scroll", checkScroll);

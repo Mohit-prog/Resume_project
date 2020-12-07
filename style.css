@@ -277,7 +277,7 @@ body {
 }
 
    .skills-display{
-       width:75%;
+       width:80%;
        padding:10px;
     margin-bottom: 30px;
       display:flex;
@@ -285,8 +285,8 @@ body {
       justify-content: space-evenly;
    }
 .skill-progress{
-    width:11rem;
-    height: 2.2rem;
+    width:8rem;
+    height: 1.4rem;
     background-color: rgb(207, 212, 130);
     border-radius: 1rem;
     box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
@@ -303,7 +303,7 @@ border-radius:20px 0px 0px 20px;
    
     font-size:1rem;
     margin-left: 10px;
-    
+   
     vertical-align: middle;
     font-weight: 600;
 }
@@ -513,7 +513,7 @@ background-color: rgb(184, 34, 34);
 
 
 .mb75px {
-    margin-bottom: 75px;
+    margin-bottom: 35px;
 }
 
 .mb50px {
