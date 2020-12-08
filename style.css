@@ -20,7 +20,7 @@ body {
         background:#3586ff;
         overflow:hidden;
      background-attachment: fixed;
-    
+    transition:1.7s;
     
     }
     #body-header .wave{
@@ -30,7 +30,7 @@ body {
         left:0;
         width:100%;
         height:100px;
-        background:url(wave.png);
+        background:url(images/wave.png);
         background-size: 1000px 100px;
         
     
@@ -99,12 +99,16 @@ body {
         flex-direction: column;
         align-items:center;
         padding-bottom:20px;
+        margin:1px 2px;
     }
     section:nth-child(2n){
         background-color:#9e9b9b29;
+        transition: 1.7s;
+        
     }
     section:nth-child(2n+1){
         background-color: white;
+        transition: 1.7s;
     }
     .section-heading{
         width: auto;
@@ -137,7 +141,7 @@ body {
     
     margin: 0;
     display: none;
-    background-color: #828470;
+    background-color: rgb(69, 159, 219);
     box-shadow: 0px 4px 8px 1px #535547;
 }
 
@@ -145,7 +149,9 @@ body {
     margin: 0.2rem 0.2rem;
     text-align: left;
     padding: 0px 0.8rem;
+    
 }
+
 
 .dropdown-menu:hover .dropdown-list{
     display: block;
@@ -234,8 +240,8 @@ body {
        width:auto;
        position:relative;
        margin-bottom: 30px;
-       margin-left: 15%;
-       margin-right: 15%;
+       margin-left: 4%;
+       margin-right: 4%;
    }
    #my-image{
        height:12rem;
@@ -255,14 +261,19 @@ body {
    }
    #about-para{
        
-       width:70%;
+       width:100%;
        padding:10px;
        text-align: justify;
        color: grey;
        line-height: 28px;
-       font-size: 1.1rem;
+       font-size: 1.2rem;
        margin:auto;
        
+   }
+   #about p{
+    color:grey;
+     font-family:san-serif;
+     transition: 1s;
    }
    .text-highlight{
       color:blue;
@@ -286,7 +297,7 @@ body {
    }
 .skill-progress{
     width:8rem;
-    height: 1.4rem;
+    height: 1.7rem;
     background-color: rgb(207, 212, 130);
     border-radius: 1rem;
     box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
@@ -324,14 +335,17 @@ background-color: rgb(184, 34, 34);
     background-color: #0b8176;
 }
 
-.purple {
-    background-color: #93738c;
+.black {
+    background-color: rgb(0, 14, 9);
 }
 .green{
-    background-color: rgb(23, 138, 28);
+    background-color: rgb(16, 105, 20);
 }
 .brown{
     background-color: rgb(61, 39, 39);
+}
+.greene{
+   background-color:rgb(18, 170, 82);
 }
 /*percent class*/
 .eighty-five{
@@ -350,8 +364,12 @@ background-color: rgb(184, 34, 34);
     width:30%;
     height:inherit;
 }
-.ten{
-    width:10%;
+.twenty{
+    width:20%;
+    height:inherit;
+}
+.two{
+    width:2%;
     height:inherit;
 }
 
@@ -528,6 +546,7 @@ background-color: rgb(184, 34, 34);
     background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
     color: white;
     padding-bottom: 40px;
+    transition: 1.7s;
 }
 #contact h1,#contact h1 span {
     color: white;

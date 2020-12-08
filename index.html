@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-   
+    <link rel="stylesheet" type="text/css" href="dark.css">
     <script src="https://kit.fontawesome.com/7335c2f7ac.js" crossorigin="anonymous"></script>
-    
+    <script  src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
      <script defer src="script.js"></script>
-    <meta charset="UTF-8">
+     <script defer src="dark.js"></script>
+    
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   
+    <title>Resume</title>
 </head>
 <body>
     <header id="body-header">
@@ -101,12 +105,12 @@
     <main>
        <section id="about">
            <div id="my-image">
-               <img src="profilepic.png">
+               <img src="images/profilepic.png">
            </div  id="about-para">
-           <p style="color:grey; font-family:san-serif"> An ICE student 
-            at Netaji subhas university of technology ,currently 3rd year,
+           <p > An ICE Final year student 
+            at Netaji subhas university of technology ,
              a software development and competitive programming enthusiast.
-              I have experience in<span class="text-highlight"> JAVA </span>& various java frameworks 
+               have experience in<span class="text-highlight"> JAVA </span>& various javascript library 
             and Strong Knowledge of <span class="text-highlight">Data Structure and Algorithms</span></p>
        </section>
 
@@ -147,7 +151,7 @@
     <div class=" eighty-five
     teal " data-bar-width="85">
     <div class="skill-name">
-      <span>HTML</span>  
+      <span>HTML&CSS</span>  
     </div>
     
     </div>
@@ -156,9 +160,9 @@
 <!---->
 <div class="skill-progress">
     <div class=" seventy-five
-    purple " data-bar-width="75">
+    black " data-bar-width="75">
     <div class="skill-name">
-      <span>CSS</span>  
+      <span>GIT</span>  
     </div>
     
     </div>
@@ -185,8 +189,8 @@
  </div>
  <!---->
 <div class="skill-progress">
-    <div class=" ten
-    blue " data-bar-width="10">
+    <div class=" twenty
+    blue " data-bar-width="20">
     <div class="skill-name">
       <span>REACTJS</span>  
     </div>
@@ -194,7 +198,15 @@
     </div>
  </div>
 <!---->
-
+<div class="skill-progress">
+    <div class=" two
+    greene " data-bar-width="2">
+    <div class="skill-name">
+      <span>MONGODB</span>  
+    </div>
+    
+    </div>
+ </div>
 <!---->
 <!---->
 <!---->
@@ -219,7 +231,7 @@
             <div class="timeline-box left">
                 <div class="timeline-container">
                     <div class="timeline-logo">
-                        <img id="nsit-img" src="nsut_logo.png">
+                        <img id="nsit-img" src="images/nsut_logo.png">
                     </div>
                     <h3 class="experience-designation  m0 m-blue"> B.E(Inst. & cont) </h3>
                     <h4 class="experience-company-name "> Netaji subhas institute of technology</h4>
@@ -236,7 +248,7 @@
                     </div>
                     <h3 class="experience-designation  m0 m-blue">CBSE CLASS 12th</h3>
                     <h4 class="experience-company-name "> BSM sr sec public school</h4>
-                    <h5 class="experience-duration m0">March 2017 </h5>
+                    <h5 class="experience-duration m0">March 2016 </h5>
 
                    <!----<p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                    --> </div>
@@ -248,7 +260,7 @@
                     </div>
                     <h3 class="experience-designation  m0 m-blue">CBSE CLASS 10th</h3>
                     <h4 class="experience-company-name "> BSM sr sec public school</h4>
-                    <h5 class="experience-duration m0">March 2015 </h5>
+                    <h5 class="experience-duration m0">March 2014 </h5>
 
                    <!----<p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                    --> </div>
@@ -286,7 +298,7 @@
     <a href="https://mohit-prog.github.io/To_do_list.github.io/" target="_blank"> 
     <div class="portfolio-image-container">
 
-        <img src="To-do-list.jpg">
+        <img src="images/To-do-list.jpg">
      
             <div class="portfolio-details">
             <p>
@@ -426,7 +438,14 @@
 
         
     </main>
-   
-   
+   <ul id="dark-mode">
+       <li>
+        <span><img alt="" src="https://bit.ly/36S7heU"></span>
+        <span><img alt="" src="https://bit.ly/3gmgfnK"></span>
+          
+          
+       </li>
+   </ul>
+  
 </body>
 </html>

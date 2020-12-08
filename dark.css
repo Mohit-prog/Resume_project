@@ -1,0 +1,84 @@
+#dark-mode{
+    position:absolute;
+    top:8vh;
+    left:10px;
+    margin:0;
+   padding:0;
+  width:40px;
+  height:24px;
+  z-index:2000;
+  border:1px solid rgb(255, 255, 255);
+  border-radius:10px;
+ background-color: white;
+  cursor: pointer;
+  overflow:hidden;
+  
+}
+#dark-mode.active{
+    border-color:#fff;
+}
+#dark-mode li{
+    list-style: none;
+    width:100%;
+    height:48px;
+    text-align:center;
+    transition:0.5s;
+}
+#dark-mode li img{
+    height:100%;
+    width:100%;
+}
+#dark-mode.active li{
+
+ transform: translateY(-24px);
+ 
+
+
+}
+#dark-mode li span{
+    display:block;
+    height:24px;
+    line-height:24px;
+    width:100%;
+    color:#fff;
+}
+
+/******applying dark mode to each section***/
+#body-header.dark{
+    background:black;
+}
+
+#contact.dark{
+    background-color: #211fa3;
+    background-image: linear-gradient(50deg,
+     #120a7c 0%, #15033b 74%);
+   
+}
+#about.dark{
+    margin-bottom: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: black;
+}
+
+#about p.dark{
+color:white;
+font-weight: 500;
+background-color: black;
+border-radius: 3%;
+width:100%;
+
+padding:10px 10px 10px 10px;
+}
+
+
+section.dark:nth-child(2n){
+    background-color:black;
+}
+section.dark:nth-child(2n+1){
+    background-color :#9e9b9b29;
+}
+/*****Dropdown menu***/
+.dropdown-list.dark{
+    background-color: #828470;
+}
