@@ -345,8 +345,8 @@ background-color: rgb(184, 34, 34);
 .brown{
     background-color: rgb(61, 39, 39);
 }
-.greene{
-   background-color:rgb(18, 170, 82);
+.orange2{
+   background-color:#e45117;
 }
 /*percent class*/
 .eighty-five{
@@ -369,10 +369,7 @@ background-color: rgb(184, 34, 34);
     width:20%;
     height:inherit;
 }
-.two{
-    width:2%;
-    height:inherit;
-}
+
 
 .eighty-eight{
     width:88%;
@@ -521,6 +518,35 @@ background-color: rgb(184, 34, 34);
     background-color: #3a313178;
     color: white;
 }
+/**work-experience*/
+#see-saw{
+    text-align: center; 
+    
+    font-size: 40px; 
+    color: rgb(177, 34, 34); 
+    animation: swing 5s linear infinite; 
+}
+@keyframes swing { 
+    0% { 
+        transform: rotate(7deg); 
+    } 
+
+    25% { 
+        transform: rotate(0deg); 
+    } 
+
+    50% { 
+        transform: rotate(-7deg); 
+    } 
+
+    75% { 
+        transform: rotate(0deg); 
+    } 
+
+    100% { 
+        transform: rotate(7deg); 
+    } 
+} 
 
 /***contact**/
 
